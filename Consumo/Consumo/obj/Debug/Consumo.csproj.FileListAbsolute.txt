@@ -1,0 +1,7 @@
+C:\Users\abrah\source\repos\Saludo_Parametro\Consumo\Consumo\bin\Debug\Consumo.exe.config
+C:\Users\abrah\source\repos\Saludo_Parametro\Consumo\Consumo\bin\Debug\Consumo.exe
+C:\Users\abrah\source\repos\Saludo_Parametro\Consumo\Consumo\bin\Debug\Consumo.pdb
+C:\Users\abrah\source\repos\Saludo_Parametro\Consumo\Consumo\obj\Debug\Consumo.csproj.AssemblyReference.cache
+C:\Users\abrah\source\repos\Saludo_Parametro\Consumo\Consumo\obj\Debug\Consumo.csproj.CoreCompileInputs.cache
+C:\Users\abrah\source\repos\Saludo_Parametro\Consumo\Consumo\obj\Debug\Consumo.exe
+C:\Users\abrah\source\repos\Saludo_Parametro\Consumo\Consumo\obj\Debug\Consumo.pdb

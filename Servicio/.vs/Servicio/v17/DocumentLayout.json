@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\abrah\\source\\repos\\Saludo_Parametro\\Servicio\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6D6113DB-B036-4015-BB21-8D780719FB11}|Servicio\\Servicio.csproj|c:\\users\\abrah\\source\\repos\\saludo_parametro\\servicio\\servicio\\webservice.asmx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D6113DB-B036-4015-BB21-8D780719FB11}|Servicio\\Servicio.csproj|solutionrelative:servicio\\webservice.asmx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D6113DB-B036-4015-BB21-8D780719FB11}|Servicio\\Servicio.csproj|c:\\users\\abrah\\source\\repos\\saludo_parametro\\servicio\\servicio\\funciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D6113DB-B036-4015-BB21-8D780719FB11}|Servicio\\Servicio.csproj|solutionrelative:servicio\\funciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Funciones.cs",
+              "DocumentMoniker": "C:\\Users\\abrah\\source\\repos\\Saludo_Parametro\\Servicio\\Servicio\\Funciones.cs",
+              "RelativeDocumentMoniker": "Servicio\\Funciones.cs",
+              "ToolTip": "C:\\Users\\abrah\\source\\repos\\Saludo_Parametro\\Servicio\\Servicio\\Funciones.cs",
+              "RelativeToolTip": "Servicio\\Funciones.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA8wB8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T01:41:58.974Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WebService.asmx.cs",
+              "DocumentMoniker": "C:\\Users\\abrah\\source\\repos\\Saludo_Parametro\\Servicio\\Servicio\\WebService.asmx.cs",
+              "RelativeDocumentMoniker": "Servicio\\WebService.asmx.cs",
+              "ToolTip": "C:\\Users\\abrah\\source\\repos\\Saludo_Parametro\\Servicio\\Servicio\\WebService.asmx.cs",
+              "RelativeToolTip": "Servicio\\WebService.asmx.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAgwCkAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T01:15:23.868Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
