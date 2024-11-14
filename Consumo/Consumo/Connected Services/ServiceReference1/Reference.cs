@@ -9,7 +9,16 @@
 //------------------------------------------------------------------------------
 
 namespace Consumo.ServiceReference1 {
+    using System.Runtime.Serialization;
+    using System;
     
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.CollectionDataContractAttribute(Name="ArrayOfString", Namespace="http://tempuri.org/", ItemName="string")]
+    [System.SerializableAttribute()]
+    public class ArrayOfString : System.Collections.Generic.List<string> {
+    }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.WebServiceSoap")]
@@ -41,6 +50,20 @@ namespace Consumo.ServiceReference1 {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Sumar", ReplyAction="*")]
         System.Threading.Tasks.Task<int> SumarAsync(int num1, int num2);
+        
+        // CODEGEN: Se está generando un contrato de mensaje, ya que el nombre de elemento VectorResult del espacio de nombres http://tempuri.org/ no está marcado para aceptar valores nil.
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Vector", ReplyAction="*")]
+        Consumo.ServiceReference1.VectorResponse Vector(Consumo.ServiceReference1.VectorRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Vector", ReplyAction="*")]
+        System.Threading.Tasks.Task<Consumo.ServiceReference1.VectorResponse> VectorAsync(Consumo.ServiceReference1.VectorRequest request);
+        
+        // CODEGEN: Se está generando un contrato de mensaje, ya que el nombre de elemento Objetos del espacio de nombres http://tempuri.org/ no está marcado para aceptar valores nil.
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GuardarVector", ReplyAction="*")]
+        Consumo.ServiceReference1.GuardarVectorResponse GuardarVector(Consumo.ServiceReference1.GuardarVectorRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GuardarVector", ReplyAction="*")]
+        System.Threading.Tasks.Task<Consumo.ServiceReference1.GuardarVectorResponse> GuardarVectorAsync(Consumo.ServiceReference1.GuardarVectorRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -240,6 +263,135 @@ namespace Consumo.ServiceReference1 {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class VectorRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="Vector", Namespace="http://tempuri.org/", Order=0)]
+        public Consumo.ServiceReference1.VectorRequestBody Body;
+        
+        public VectorRequest() {
+        }
+        
+        public VectorRequest(Consumo.ServiceReference1.VectorRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute()]
+    public partial class VectorRequestBody {
+        
+        public VectorRequestBody() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class VectorResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="VectorResponse", Namespace="http://tempuri.org/", Order=0)]
+        public Consumo.ServiceReference1.VectorResponseBody Body;
+        
+        public VectorResponse() {
+        }
+        
+        public VectorResponse(Consumo.ServiceReference1.VectorResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class VectorResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public Consumo.ServiceReference1.ArrayOfString VectorResult;
+        
+        public VectorResponseBody() {
+        }
+        
+        public VectorResponseBody(Consumo.ServiceReference1.ArrayOfString VectorResult) {
+            this.VectorResult = VectorResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GuardarVectorRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GuardarVector", Namespace="http://tempuri.org/", Order=0)]
+        public Consumo.ServiceReference1.GuardarVectorRequestBody Body;
+        
+        public GuardarVectorRequest() {
+        }
+        
+        public GuardarVectorRequest(Consumo.ServiceReference1.GuardarVectorRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GuardarVectorRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public Consumo.ServiceReference1.ArrayOfString Objetos;
+        
+        public GuardarVectorRequestBody() {
+        }
+        
+        public GuardarVectorRequestBody(Consumo.ServiceReference1.ArrayOfString Objetos) {
+            this.Objetos = Objetos;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GuardarVectorResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GuardarVectorResponse", Namespace="http://tempuri.org/", Order=0)]
+        public Consumo.ServiceReference1.GuardarVectorResponseBody Body;
+        
+        public GuardarVectorResponse() {
+        }
+        
+        public GuardarVectorResponse(Consumo.ServiceReference1.GuardarVectorResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GuardarVectorResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string GuardarVectorResult;
+        
+        public GuardarVectorResponseBody() {
+        }
+        
+        public GuardarVectorResponseBody(string GuardarVectorResult) {
+            this.GuardarVectorResult = GuardarVectorResult;
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public interface WebServiceSoapChannel : Consumo.ServiceReference1.WebServiceSoap, System.ServiceModel.IClientChannel {
     }
@@ -346,6 +498,54 @@ namespace Consumo.ServiceReference1 {
         
         public System.Threading.Tasks.Task<int> SumarAsync(int num1, int num2) {
             return base.Channel.SumarAsync(num1, num2);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Consumo.ServiceReference1.VectorResponse Consumo.ServiceReference1.WebServiceSoap.Vector(Consumo.ServiceReference1.VectorRequest request) {
+            return base.Channel.Vector(request);
+        }
+        
+        public Consumo.ServiceReference1.ArrayOfString Vector() {
+            Consumo.ServiceReference1.VectorRequest inValue = new Consumo.ServiceReference1.VectorRequest();
+            inValue.Body = new Consumo.ServiceReference1.VectorRequestBody();
+            Consumo.ServiceReference1.VectorResponse retVal = ((Consumo.ServiceReference1.WebServiceSoap)(this)).Vector(inValue);
+            return retVal.Body.VectorResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Consumo.ServiceReference1.VectorResponse> Consumo.ServiceReference1.WebServiceSoap.VectorAsync(Consumo.ServiceReference1.VectorRequest request) {
+            return base.Channel.VectorAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Consumo.ServiceReference1.VectorResponse> VectorAsync() {
+            Consumo.ServiceReference1.VectorRequest inValue = new Consumo.ServiceReference1.VectorRequest();
+            inValue.Body = new Consumo.ServiceReference1.VectorRequestBody();
+            return ((Consumo.ServiceReference1.WebServiceSoap)(this)).VectorAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Consumo.ServiceReference1.GuardarVectorResponse Consumo.ServiceReference1.WebServiceSoap.GuardarVector(Consumo.ServiceReference1.GuardarVectorRequest request) {
+            return base.Channel.GuardarVector(request);
+        }
+        
+        public string GuardarVector(Consumo.ServiceReference1.ArrayOfString Objetos) {
+            Consumo.ServiceReference1.GuardarVectorRequest inValue = new Consumo.ServiceReference1.GuardarVectorRequest();
+            inValue.Body = new Consumo.ServiceReference1.GuardarVectorRequestBody();
+            inValue.Body.Objetos = Objetos;
+            Consumo.ServiceReference1.GuardarVectorResponse retVal = ((Consumo.ServiceReference1.WebServiceSoap)(this)).GuardarVector(inValue);
+            return retVal.Body.GuardarVectorResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Consumo.ServiceReference1.GuardarVectorResponse> Consumo.ServiceReference1.WebServiceSoap.GuardarVectorAsync(Consumo.ServiceReference1.GuardarVectorRequest request) {
+            return base.Channel.GuardarVectorAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Consumo.ServiceReference1.GuardarVectorResponse> GuardarVectorAsync(Consumo.ServiceReference1.ArrayOfString Objetos) {
+            Consumo.ServiceReference1.GuardarVectorRequest inValue = new Consumo.ServiceReference1.GuardarVectorRequest();
+            inValue.Body = new Consumo.ServiceReference1.GuardarVectorRequestBody();
+            inValue.Body.Objetos = Objetos;
+            return ((Consumo.ServiceReference1.WebServiceSoap)(this)).GuardarVectorAsync(inValue);
         }
     }
 }
