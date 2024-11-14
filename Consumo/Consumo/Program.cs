@@ -35,7 +35,7 @@ namespace Consumo
             Console.WriteLine(results2);*/
 
             /*Ejercicio 4*/
-            Console.WriteLine("Introduce dos valores");
+            /*Console.WriteLine("Introduce dos valores");
 
             int num1 = int.Parse(Console.ReadLine());
             int num2 = int.Parse(Console.ReadLine());
@@ -43,6 +43,25 @@ namespace Consumo
             int result = cliente.Sumar(num1, num2);
             Console.WriteLine("El resultado de la operación es: " + result);
 
+            Console.ReadLine();*/
+
+
+            /*Ejercicio 5*/
+            /*string[] Estaciones = cliente.Vector().ToArray();
+
+            foreach(string e in Estaciones)
+            {
+                Console.WriteLine(e);
+            }
+            Console.ReadLine();*/
+
+            /*Ejercicio 6*/
+            ServiceReference1.ArrayOfString Arreglo = new ServiceReference1.ArrayOfString();
+
+            Arreglo = new ServiceReference1.ArrayOfString() { "Abraham", "Focus", "Espagueti", "Guitarra" };
+            
+            string result = cliente.GuardarVector(Arreglo);
+            
             Console.ReadLine();
         }
     }

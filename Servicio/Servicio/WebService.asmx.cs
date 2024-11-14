@@ -42,5 +42,27 @@ namespace Servicio
             return resultado;
         }
 
+        [WebMethod(Description = "Consumo de vector")]
+        public string [] Vector()
+        {
+            string[] Estaciones = new string[4];
+            Estaciones[0] = "Invierno";
+            Estaciones[1] = "Primavera";
+            Estaciones[2] = "Verano";
+            Estaciones[3] = "Otoño";
+
+            return Estaciones;
+        }
+
+        [WebMethod(Description = "Recibe vector y guarda en txt")]
+        public string GuardarVector(string[] Objetos)
+        {
+            foreach (string Objeto in Objetos)
+            {
+                Funciones.Logs("ArchivoVector", Objeto);
+            }
+
+            return "Guardado con éxito";
+        }
     }
 }
